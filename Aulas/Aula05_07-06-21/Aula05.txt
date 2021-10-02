@@ -1,0 +1,8 @@
+Aula 05 07/06/2021
+
+
+Laços de Repetição
+
+ENQUANTO
+FAÇA...ENQUANTO
+PARA

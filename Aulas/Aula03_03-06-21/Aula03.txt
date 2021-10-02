@@ -1,0 +1,46 @@
+Lógica de programação
+
+Algoritmo do miojo
+* Todo algoritmo é um passo a passo ordenado e finito.
+* Existem instruções entendidas e não entendidas
+depende de quem está interpretando.
+* Toda a instrução realizada é uma ação
+* Todo algoritmo é um passo a passo ordenado e finito
+
+Escovar os dentes
+1 Pegar a escova de dentes
+2 Colocar o creme dental na escova
+3 Molhar a boca 
+4 Levar a escova ate a boca
+5 Escovar todos os dentes
+6 Escovar a língua
+7 Enxaguar a boca com água
+8 Cuspir 
+9 Guardar a escova e o creme dental
+
+
+Como ensinar linguagem de programação para uma criança
+https://www.youtube.com/watch?v=pdhqwbUWf4U
+
+
+Fluxograma
+draw.io
+
+Miojo
+Nome, Idade
+Somar
+
+
+Algoritmo
+Portugol Studio
+https://portugol-webstudio.cubos.io/
+
+Miojo
+Nome, Idade
+Somar
+
+
+Sócio Fundador da Marketdata
+Rubens 
+
+

@@ -1,0 +1,53 @@
+Aula 11
+Restrição Cardinalidade
+N   N
+1   N
+N   1
+
+Restrição Participação
+ * Parcial
+ * Total
+
+DER_Instituição
+
+Instutuicao()
+
+instrutor(
+nome
+telefone
+empresa(atributo multivalorado)
+	*(chave)CNPJ
+	nome_empresa
+bancario(atributo multivalorado)
+	banco
+	agencia
+	numero_conta)
+
+
+aluno(
+*(chave)CPF
+nome
+data_nascimento
+	idade(atributo derivado)
+email(atributo multivalorado)
+telefone(atributo multivalorado))
+
+curso(
+*(chave)titulo
+descricao
+carga_horaria)
+
+turma(
+*(chave)codigo
+data_inicio
+data_termino
+periodo
+status)
+
+RELACIONAMENTOS
+INSTRUTOR__n__ministra__n__CURSO 
+
+INSTRUTOR__1__forma__n__TURMA(Relacionamento ternario)
+CURSO____1____     __n__
+
+ALUNO__n__increver__n__TURMA

@@ -1,0 +1,63 @@
+BANCO DE DADOS RH MARKETDATA
+
+DEPARTAMENTO(nome, numero_departamento, funcionario_responsavel_departamento, data_inicio_gerencia);
+
+FUNCIONARIO(nome, numero_seguro_social, endereco, salario, sexo, data_nascimento, numero_departamento_atuacao, percent_horas_projeto, cargo)
+
+DEPENDENTE(nome, sexo, data_nascimento, funcionario_responsavel, grau_parentesco);
+
+PROJETOS(nome, numero_projeto, localizacao, data_inicio, data_termino, cliente)
+
+CLIENTE(nome, CNPJ, nome_fantasia, email, endereco, telefone, numero_projeto)
+
+
+
+*****SOLUCAO DO GU*****
+
+DEPARTAMENTO(
+_*id_departamento(atributo chave) 
+_nome 
+_data_inicio)
+
+FUNCIONARIO(
+_nome
+_*numero_seguro_social(atributo chave)
+_endereco
+_salario
+_sexo
+_data_nascimento
+_**id_departamento_atuacao(atributo derivado))
+
+
+DEPENDENTE(
+_**numero_seguro_social_funcionario(atributo derivado)
+_*nome(atributo chave)
+_sexo
+_data_nascimento
+_grau_parentesco)
+
+
+PROJETO(
+_nome
+_*id_projeto(atributo chave)
+_localizacao
+_data_inicio
+_data_termino)
+
+
+CLIENTE(
+_*CNPJ(atributo chave)
+_nome_fantasia
+_contato
+_endereco
+_telefone)
+
+
+RELACIONAMENTOS
+
+FUNCIONARIO___gerencia___DEPARTAMENTO
+FUNCIONARIO___atua___PROJETO
+FUNCIONARIO___gerencia___PROJETO
+FUNCIONARIO___possui___DEPENDENTE(Entidade fraca)
+PROJETO___possui___CLIENTE
+

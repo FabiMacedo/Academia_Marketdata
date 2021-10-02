@@ -1,0 +1,16 @@
+Aula 13
+
+Normalização
+
+Normalização é o processo que confere atributos das relações(tabelas) de modo que as redundâncias de dados sejam reduzidas ou eliminadas.
+
+* DEPENDÊNCIA FUNCIONAL TOTAL
+ O atributo não tem sentido sem a chave, sendo assim depende da chave.
+
+OBS: Se existe um campo textual em que se repete em chaves diferentes, este campo provavelmente não é dependente da chave. 
+
+* DEPENDÊNCIA TRANSITIVA
+Atributo que determina outro atributo
+Exemplo CIDADE ESTADO PAÍS
+
+*** FORMA NORMAL

@@ -1,0 +1,102 @@
+Aula04_04-06-21
+
+Lógica de programação
+Desvios condicionais
+SE
+SE...SENAO
+SE...SENAO...SE
+ESCOLHA CASO
+
+
+ESCOLHA CASO Estado civil
+programa {
+	funcao inicio() {
+		cadeia nome
+		caracter estado_civil
+		inteiro idade
+		
+		escreva("Digite seu nome: ")
+		leia(nome)
+		escreva("Digite sua idade: ")
+		leia(idade)
+		escreva("Informe seu estado civil: ")
+		escreva("\n S - Solteiro(a)")
+		escreva("\n C - Casado(a)")
+		escreva("\n P - separado(a)")
+		escreva("\n D - Divorciado(a)")
+		escreva("\n V - Viúvo(a)\n")
+		leia(estado_civil)
+		
+		escolha(estado_civil)
+		{
+		    caso 'S': 
+		        escreva(nome, " tem ",idade," e é solteiro(a)")
+		    pare
+		    caso 'C':
+		        escreva(nome, " tem ",idade," e é casado(a)")
+		    pare
+		    caso 'P':
+		        escreva(nome, " tem ",idade," e é separado(a)")
+		    pare
+		    caso 'D':
+		        escreva(nome, " tem ",idade," e é divorciado(a)")
+		    pare
+		    caso 'V':
+		        escreva(nome, " tem ",idade," e é viúvo(a)")
+		    pare
+		}
+	}
+
+
+
+
+IMC
+programa {
+	funcao inicio() {
+	    real peso, altura, imc
+	    
+	    escreva("Informe seu peso: ") 
+	    leia(peso)
+	    escreva("Informe sua altura: ") 
+	    leia(altura)
+	    imc = peso / (altura * altura)
+	    
+	    se (imc <= 18.5)
+	    {
+	        escreva("O seu IMC é ",imc," e você está abaixo do peso!")
+	    }
+	    senao se (imc <= 24.9)
+	    {
+	        escreva("O seu IMC é ",imc," e você está com peso normal!")
+	    }
+	    senao se (imc <= 29.9)
+	    {
+	        escreva("o seu IMC é ",imc," e você está com sobrepeso!")
+	    }
+	    senao
+	    {
+	        escreva("o seu IMC é ",imc," e você está com obesidade!")
+	    }
+	}
+}
+
+
+
+
+Pesquisar "ORACLE RESPONSES"
+
+PERFIL
+Curiosos
+Questinadoras
+Comprometidas
+Sede de aprender 
+Resiliencia
+Protagonismo
+
+SQL E ORACLE
+
+Scrum e kambam
+
+Metodologia ágil
+
+

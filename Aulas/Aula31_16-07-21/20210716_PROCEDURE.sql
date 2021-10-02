@@ -1,0 +1,64 @@
+--Coloque o seu BD em uso
+USE MASTER
+
+--Crie uma procedure sp_compras no seu BD que:
+--Cria uma tabela TB_VENDAS com as vendas dos 
+-- X últimos dias (quantidade passada por parâmetro) 
+--Lembre-se de excluir a tabela, caso ela já exista
+CREATE PROCEDURE SP_COMPRAS @QTD_DIAS INT
+AS
+BEGIN
+	
+	--VERIFICAR SE A TABELA EXISTE E EXCLUIR
+	DROP TABLE IF EXISTS TB_VENDAS;
+
+	--SELECT COM INTO PARA CRIAR A TABELA
+	SELECT * 
+	INTO TB_VENDAS
+	FROM DB_MADA_VAREJO..TB_VENDA
+	WHERE DATEDIFF(DAY,DT_VENDA,GETDATE()) <= @QTD_DIAS
+		
+END
+
+SELECT * FROM TB_VENDAS
+ORDER BY DT_VENDA
+
+--Execute a procedure com parâmetro de 30 dias; 
+EXEC SP_COMPRAS 30
+
+--Execute a procedure com parâmetro de 60 dias;
+EXEC SP_COMPRAS 60
+
+--Execute a procedure com parâmetro de 90 dias.
+EXEC SP_COMPRAS 90
+
+-- SEGUNDA RESOLUÇÃO COM CREATE TABLE
+CREATE PROCEDURE SP_COMPRAS2 @QTD_DIAS INT
+AS
+BEGIN
+	
+	--VERIFICAR SE A TABELA EXISTE E EXCLUIR
+	DROP TABLE IF EXISTS TB_VENDAS;
+
+	-- CRIA A TABELA TB_VENDA
+	CREATE TABLE [TB_VENDAS](
+		[ID_VENDA] [bigint]  NOT NULL,
+		[DT_VENDA] [datetime2](7) NOT NULL,
+		[DT_ENVIO] [datetime2](7) NULL,
+		[DT_ENTREGA] [datetime2](7) NULL,
+		[DS_STATUS] [varchar](30) NOT NULL,
+		[ID_CLIENTE] [int] NOT NULL,
+		[ID_ENDERECOENTREGA] [int] NOT NULL,
+		[ID_ENDERECOCOBRANCA] [int] NOT NULL,
+		[VL_SUBTOTAL] [decimal](9, 2) NOT NULL,
+		[VL_FRETE] [decimal](9, 2) NOT NULL
+	)
+
+	
+	--INSERT COM SELECT 
+	INSERT TB_VENDAS
+	SELECT *
+	FROM DB_MADA_VAREJO..TB_VENDA
+	WHERE DATEDIFF(DAY,DT_VENDA,GETDATE()) <= @QTD_DIAS
+		
+END

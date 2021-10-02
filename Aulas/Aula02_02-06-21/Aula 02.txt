@@ -1,0 +1,39 @@
+Aula 02
+
+Raciocínio Lógico e Lógica de Programação
+* Metacognição - qual caminho eu percorri para resolver um problema
+
+Lógica
+*Aristóteles
+*Frege
+
+Mudar o jeito automático para outro jeito ex trocar a mão para mecher no mouse
+
+Tecnicas para solução de problemas
+* DECOMPOSIÇÂO - dividir em partes menores
+* ABSTRAÇÂO 
+
+Jogo dos monges e canibais
+https://www.jogos360.com.br/canibais_vs_monges.html
+1 levar 2 canibais ficar um e volta um
+2 levar 2 canibais ficar 2 e volta um
+3 trocar 1 canibal e levar dois monges
+4 deixar 2 monges e trocar pelo canibal
+5 buscar os dois canibais restantes 
+
+* Tentativa e erro
+* Árvore de possibilidades
+
+
+* SUDOKU
+* DESAFIO DE LÓGICA - Emails
+
+Formas de solução
+
+
+
+
+https://rachacuca.com.br/teste-de-einstein/
+
+
+

@@ -1,0 +1,54 @@
+Aula 06 
+
+Livro Sistemas de Banco de Dados
+
+O que são dados? Dados são fatos brutos, ou seja, ainda não foram processados de modo a revelar seu significado.(Peter Rob, Database System)
+
+Evoluindo...
+
+conjunto de:
+
+v
+a
+l
+o
+r
+^
+|
+|dado -> informação -> conhecimento -> inteligência
+|         passado                       futuro
+|-------------------- TEMPO ----------------------->
+
+Dado é muito valioso, mas é necessário trabalhar ele para obter valor.
+
+O que é Banco de Dados?
+Banco de Dados é um local para armazenar dados.
+Banco de Dados: conjunto organizado de dados, armazenados num meio físico para tratatmento posterior; base de dados (Michaelis, dicionário)
+
+Analógico
+
+Banco de Dados é uma estrutura computacional compartilhada e integrada que armazena um conjunto de dados(fatos brutos) e seus metadados.
+
+Metadados -> Dados sobre dados 
+Trazem dados sobre os dados ex: tabela de alunos Marketdata 
+
+Banco de dados é o local, arquivo.
+
+SGBD - SISTEMA GERENCIADOR DE BD
+DBMS - DATABASE MANAGEMENT SYSTEM
+
+DBM MARKETING - DATABASE MARKETING
+
+SQL - Structured Query Language
+
+Tabela: Matriz composta de intersecções de linhas e colunas que representa uma relação de objetos sobre os quais se deseja armazenar dados(atributos). 
+
+Atividade em grupo: AIRBNB
+
+
+ 
+
+
+
+
+
